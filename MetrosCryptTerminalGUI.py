@@ -8,46 +8,53 @@ from prompt_toolkit.shortcuts import message_dialog
 from prompt_toolkit.shortcuts import input_dialog
 from prompt_toolkit.styles import Style
 
-
 __version__ = 1.1
 
-def message(self):
+# Message function to display messages and errors on the screen.
+def message(text):
     message_dialog(title='MetrosCryptTerminalGUI {}'.format(__version__), text=text).run()
-        
 
 class main:
-
-    terminal_work = True
-
+    '''
+    The main class of the program. 
+    Class content:  
+      menu_init - main menu initialization function.
+      command_init - function to process the selected menu item.
+      file_encrypt_decrypt - the encryption or decryption algorithm function also includes echo_encrypt_file and echo_decrypt_file - these are 3, 4 menu items.
+    '''
+  
     def __init__(self):
         super().__init__()
+        self.terminal_work = True
         while self.terminal_work == True:
             try:
                 self.menu_init()
                 self.command_init()
             except:
                 pass
-
+    
+    # Initialization of the main menu.
     def menu_init(self):
         self.main_menu = radiolist_dialog(
             title='Select an action',
             text='What are you going to do?',
             values=[
-                ('encrypt_file', 'Encrypt the file...'),
-                ('decrypt_file', 'Decrypt the file...\n'),
+                ('encrypt_file', '1. Encrypt the file...'),
+                ('decrypt_file', '2. Decrypt the file...\n'),
                 ('echo_encrypt_file',
-                 'Take the value encrypt from the file and output...'),
+                 '3. Take the value encrypt from the file and output...'),
                 ('echo_decrypt_file',
-                 'Take the value decrypt from the file and output...\n'),
-                ('view_spawn_algorithm_pypi', 'Open PyPi encryption algorithm...\n'),
-                ('view_spawn_program', 'View the help of the program...'),
-                ('view_spawn_website', 'Open the developer\'s website...'),
+                 '4. Take the value decrypt from the file and output...\n'),
+                ('view_spawn_algorithm_pypi', '5. Open PyPi encryption algorithm...\n'),
+                ('view_spawn_program', '6. View the help of the program...'),
+                ('view_spawn_website', '7. Open the developer\'s website...'),
                 ('view_spawn_github',
-                 'Open the developer\'s github (John-MetrosSoftware)...\n'),
-                ('exit', 'Exit the program.')
+                 '8. Open the developer\'s github (John-MetrosSoftware)...\n'),
+                ('exit', '0. Exit the program.')
             ]
         ).run()
-
+    
+    # Processing the selected menu item.
     def command_init(self):
         if self.main_menu == 'encrypt_file':
             self.file_encrypt_decrypt(action='encrypt_file')
@@ -68,7 +75,8 @@ class main:
                 'https://github.com/John-MetrosSoftware/MetrosCryptTerminalGUI')
         if self.main_menu == 'exit' or self.main_menu == None:
             self.terminal_work = False
-
+    
+    # Encryption and decryption algorithm.
     def file_encrypt_decrypt(self, action):
         if action == 'encrypt_file':
             text_input = 'Enter the password to encrypt the file.'
@@ -83,7 +91,7 @@ class main:
         if file_name == 'None':
             return
         if os.path.isfile(file_name) == False:
-            self.message('Could not find the file ({}).'.format(file_name))
+            message('Could not find the file ({}).'.format(file_name))
         elif os.path.isfile(file_name) == True:
             password = str(input_dialog(title=text_input,
                            text='Password:', password=True).run())
@@ -98,14 +106,14 @@ class main:
                         file.write(str(result_encrypt))
                         file.close()
                     else:
-                        self.message(
+                        message(
                             'The file could not be opened. ({}). There may be an incorrect password.'.format(file_name))
                         return
                 except Exception as error:
-                    self.message(str(error))
+                    message(str(error))
                     return
                 else:
-                    self.message('The file has been successfully encrypted!')
+                    message('The file has been successfully encrypted!')
                     return
             if action == 'decrypt_file':
                 try:
@@ -118,14 +126,14 @@ class main:
                         file.write(str(result_decrypt))
                         file.close()
                     else:
-                        self.message(
+                        message(
                             'The file could not be opened. ({}). There may be an incorrect password.'.format(file_name))
                         return
                 except Exception as error:
-                    self.message(str(error))
+                    message(str(error))
                     return
                 else:
-                    self.message('The file has been successfully decrypted!')
+                    message('The file has been successfully decrypted!')
                     return
             if action == 'echo_encrypt_file':
                 try:
@@ -135,14 +143,14 @@ class main:
                         file_name_open, password)
                     print(result_encrypt)
                     if result_encrypt != False:
-                        self.message(result_encrypt+'\n\n'+'_' *
+                        message(result_encrypt+'\n\n'+'_' *
                                      50+'\nEncrypted file: '+file_name)
                     else:
-                        self.message(
+                        message(
                             'The file could not be opened. ({}). There may be an incorrect password.'.format(file_name))
                         return
                 except Exception as error:
-                    self.message(str(error))
+                    message(str(error))
                     return
             if action == 'echo_decrypt_file':
                 try:
@@ -151,14 +159,14 @@ class main:
                     result_decrypt = cryptocode.decrypt(
                         file_name_open, password)
                     if result_decrypt != False:
-                        self.message(result_decrypt+'\n\n'+'_' *
+                        message(result_decrypt+'\n\n'+'_' *
                                      50+'\nDecrypted file: '+file_name)
                     else:
-                        self.message(
+                        message(
                             'The file could not be opened. ({}). There may be an incorrect password.'.format(file_name))
                         return
                 except Exception as error:
-                    self.message(str(error))
+                    message(str(error))
                     return
 
 
@@ -166,4 +174,4 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as error:
-        errors('Unknown error: {}'.format(str(error)))
+        message('Unknown error: {}'.format(str(error)))
