@@ -9,6 +9,12 @@ from prompt_toolkit.shortcuts import input_dialog
 from prompt_toolkit.styles import Style
 
 
+__version__ = 1.1
+
+def message(self):
+    message_dialog(title='MetrosCryptTerminalGUI {}'.format(__version__), text=text).run()
+        
+
 class main:
 
     terminal_work = True
@@ -62,9 +68,6 @@ class main:
                 'https://github.com/John-MetrosSoftware/MetrosCryptTerminalGUI')
         if self.main_menu == 'exit' or self.main_menu == None:
             self.terminal_work = False
-
-    def message(self, text):
-        message_dialog(title='MetrosCryptTerminalGUI 1.0', text=text).run()
 
     def file_encrypt_decrypt(self, action):
         if action == 'encrypt_file':
@@ -160,4 +163,7 @@ class main:
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as error:
+        errors('Unknown error: {}'.format(str(error)))
