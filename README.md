@@ -11,6 +11,10 @@ It is written in <a href="https://python.org">Python</a> <a href="https://www.py
   <img src="https://user-images.githubusercontent.com/107058068/174311924-c333cfa9-b648-40bf-bb50-0833a94816cd.png" alt="MetrosCryptTerminalGUI">
 </p>
 
+__A detailed explanation of version 1.1 will be a little later due to technical problems.__
+
+
+
 ## Other versions of the program
 - <a href="https://github.com/John-MetrosSoftware/MetrosCrypt">MetrosCrypt</a>
 - <a href="https://github.com/John-MetrosSoftware/MetrosCryptTerminal">MetrosCryptTerminal</a>
