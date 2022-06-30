@@ -148,5 +148,3 @@ When making edits in the code or other changes, mark the author I want to know h
 ```
 autopep8 MetrosCryptTerminalGUI.py --recursive --in-place
 ```
-## Developer 
-Telegram : https://t.me/metrossoftware
