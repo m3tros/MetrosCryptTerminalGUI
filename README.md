@@ -8,10 +8,10 @@ MetrosCryptTerminalGUI is for file encryption/decryption based on the <a href="h
 It is written in <a href="https://python.org">Python</a> <a href="https://www.python.org/downloads/release/python-3104/">3.10.4</a> 
 
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174311924-c333cfa9-b648-40bf-bb50-0833a94816cd.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609108-ea5da88a-5a21-4732-a44e-fa4306e7c08d.png" alt="MetrosCryptTerminalGUI">
 </p>
 
-__A detailed explanation of version `1.1` will be a little later due to technical problems.__
+ 
 
 
 
@@ -36,69 +36,69 @@ python3 MetrosCryptTerminalGUI.py
 ### Encrypt the file
 #### Enter the path of the file that will be encrypted
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174312818-deb68254-8aac-4999-b310-3aa7388425d3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609241-f48f058d-1456-4644-be15-5582255720c6.png" alt="MetrosCryptTerminalGUI">
 </p>
  
 #### If the file you entered was not found
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313021-e004ddd7-dacb-4f0a-bb1d-cea89f7b4e8b.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609371-7c308e83-6e36-4759-af26-f32b4ebf9691.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Enter the encryption password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313168-90280271-4093-4ee0-abe4-ecc77f87d7e3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609645-b16a02dd-7fbc-4afe-8f7c-6fd1f76e7d3e.png" alt="MetrosCryptTerminalGUI">
 </p>
  
 #### If everything is successful
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313663-bc3505cc-ccb8-41e3-8c9b-31896c59ce16.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177610079-786901ec-da27-4a35-a75f-16e55ca2205a.png" alt="MetrosCryptTerminalGUI">
 </p>
  
 ### Decrypt the file
 #### Enter the path of the file that will be decrypted
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174312818-deb68254-8aac-4999-b310-3aa7388425d3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609241-f48f058d-1456-4644-be15-5582255720c6.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If the file you entered was not found
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313021-e004ddd7-dacb-4f0a-bb1d-cea89f7b4e8b.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609371-7c308e83-6e36-4759-af26-f32b4ebf9691.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Enter the decryption password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313168-90280271-4093-4ee0-abe4-ecc77f87d7e3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177610578-bb39c2c8-96e9-4c7b-b15b-2b58c94b27ba.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Invalid password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174314175-751360f8-104f-4c85-8046-6c3ed1b1c739.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177610672-41dae3d8-2262-48bd-83f3-68edfc2aa053.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If everything is successful
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174314602-8fabe62b-afb6-40ab-8dbf-c1e3c1126d71.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177610799-a10c0380-6fbf-4f12-82ac-651931d5e3b6.png" alt="MetrosCryptTerminalGUI">
 </p>
  
 ### Take the value encrypt from the file and output
 #### Enter the path of the file that will be the result of which will be encrypted and output
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174312818-deb68254-8aac-4999-b310-3aa7388425d3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609241-f48f058d-1456-4644-be15-5582255720c6.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If the file you entered was not found
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313021-e004ddd7-dacb-4f0a-bb1d-cea89f7b4e8b.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609371-7c308e83-6e36-4759-af26-f32b4ebf9691.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Enter the encryption password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313168-90280271-4093-4ee0-abe4-ecc77f87d7e3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609645-b16a02dd-7fbc-4afe-8f7c-6fd1f76e7d3e.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If everything is successful
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174315015-18fa02ec-023c-4115-99ca-8dd9a2c6a1c8.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177611097-c26482fc-b3f3-404a-b172-8e384c7cacd4.png" alt="MetrosCryptTerminalGUI">
 </p>
 
  
@@ -106,32 +106,32 @@ python3 MetrosCryptTerminalGUI.py
 ### Take the value decrypt from the file and output
 #### Enter the path of the file that will be the result of which will be decrypted and output
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174312818-deb68254-8aac-4999-b310-3aa7388425d3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609241-f48f058d-1456-4644-be15-5582255720c6.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If the file you entered was not found
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313021-e004ddd7-dacb-4f0a-bb1d-cea89f7b4e8b.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177609371-7c308e83-6e36-4759-af26-f32b4ebf9691.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Enter the decryption password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174313168-90280271-4093-4ee0-abe4-ecc77f87d7e3.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177611823-e0bddfac-ec99-49be-b665-41b3fd1630ee.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### Invalid password
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174314175-751360f8-104f-4c85-8046-6c3ed1b1c739.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177611972-bb1a5bea-420e-4ad7-96ef-4a07e1dcc4a6.png" alt="MetrosCryptTerminalGUI">
 </p>
 
 #### If everything is successful
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/107058068/174315629-b9123bff-c96e-43ce-bf5b-37523a4070ff.png" alt="MetrosCryptTerminalGUI">
+  <img src="https://user-images.githubusercontent.com/107058068/177611440-73b42a99-0d8c-42f3-b76b-478264b8c8fc.png" alt="MetrosCryptTerminalGUI">
 </p>
 
  
  ## Compilation
-This version 1.1 is a version without saving any settings or changing them.<br>
+This version `1.1` is a version without saving any settings or changing them.<br>
 All software is provided in English with executable files, these parameters cannot be changed.<br>
 I usually compile my projects using the <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> compiler with the following parameters:
 ```
