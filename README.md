@@ -12,7 +12,7 @@ It is written in <a href="https://python.org">Python</a> <a href="https://www.py
 </p>
 
  
-
+Use the `↑` `↓` buttons to move. To complete the action, `enter` or the `Ok` button.
 
 
 ## Other versions of the program
